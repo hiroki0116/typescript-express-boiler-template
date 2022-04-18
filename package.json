@@ -9,7 +9,6 @@
     "clean": "rimraf dist",
     "tsc": "tsc",
     "build": "npm-run-all clean tsc",
-    "deploy": "git push heroku master"
   },
   "author": "",
   "license": "ISC",
