@@ -4,12 +4,12 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node .",
-    "dev": "nodemon src/app.ts",
+    "start": "node dist/app.js",
+    "dev": "nodemon dist/app.js",
     "clean": "rimraf dist",
     "tsc": "tsc",
-    "build": "npm-run-all clearn tsc"
+    "build": "npm-run-all clearn tsc",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "author": "",
   "license": "ISC",
