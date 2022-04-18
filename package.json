@@ -8,7 +8,7 @@
     "dev": "nodemon dist/app.js",
     "clean": "rimraf dist",
     "tsc": "tsc",
-    "build": "npm-run-all clearn tsc",
+    "build": "npm-run-all clean tsc",
     "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "author": "",
