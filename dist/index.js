@@ -14,7 +14,6 @@ app.use(express_1.default.urlencoded({ extended: true }));
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/contacts', require('./routes/contacts'));
-console.log(process.env);
 const port = process.env.PORT || 8000;
 app.listen(port);
 console.log('Express WebApi listening on port ' + port);
