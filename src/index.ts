@@ -11,7 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/contacts', require('./routes/contacts'));
-console.log(process.env.DB_CLOUD)
 
 const port = process.env.PORT || 8000;
 
