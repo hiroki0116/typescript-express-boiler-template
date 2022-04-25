@@ -1,10 +1,18 @@
-require('dotenv').config();
 import express from 'express';
+import * as dotenv from "dotenv";
+import cors from "cors";
+import helmet from "helmet";
 import { dbConnect } from './dbhelpers/db.helper';
+
+dotenv.config();
 
 const app = express();
 dbConnect();
-app.use(express.json())
+
+
+app.use(helmet());
+app.use(cors());
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Define Routes
