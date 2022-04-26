@@ -6,7 +6,8 @@
   "module": "CommonJS",
   "scripts": {
     "start": "node dist/index.js",
-    "postinstall": "tsc",
+    "build": "tsc",
+    "postinstall": "npm run build",
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
     "watch-ts": "tsc -w"
   },
